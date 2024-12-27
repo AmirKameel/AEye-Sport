@@ -1,0 +1,9 @@
+streamlit
+openai
+pandas
+moviepy
+pytube
+speechrecognition
+youtube-transcript-api
+toml
+streamlit_navigation_bar
