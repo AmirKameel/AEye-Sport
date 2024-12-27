@@ -76,7 +76,7 @@ if page == "Home":
     """, unsafe_allow_html=True)
     
     # Hero Image
-    st.image("team2.jpeg", use_column_width=True)  # Replace with actual image URL
+    st.image("team2.jpeg", use_container_width=True)  # Replace with actual image URL
     
     # Service Overviews
     st.markdown("""
