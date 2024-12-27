@@ -1,7 +1,7 @@
 streamlit
 openai
 pandas
-moviepy
+moviepy==1.0.3
 pytube
 speechrecognition
 youtube-transcript-api
