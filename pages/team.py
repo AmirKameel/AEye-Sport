@@ -7,22 +7,22 @@ from streamlit_navigation_bar import st_navbar
 # Set up page configuration
 st.set_page_config(page_title="Player Performance Analysis", page_icon="⚽", layout="wide")
 
-# Define pages and their respective URLs
-pages = ["Home", "Player", "Team", "A_Eye"]
-urls = {"A_Eye": "https://aeye-sport.com/"}
 
-# Styles for the navigation bar
+
+
+# Navigation bar setup remains the same
+pages = ["Home", "Player", "Team", "A_Eye"]
+urls = {"A_Eye": "aeye-sport.com"}
+
 styles = {
     "nav": {
-        "background-color": "#2C3E50",  # Dark blue
+        "background-color": "#2C3E50",
         "justify-content": "center",
         "padding": "10px",
         "border-radius": "5px",
         "box-shadow": "0px 4px 8px rgba(0,0,0,0.2)"
     },
-    "img": {
-        "padding-right": "14px",
-    },
+    "img": {"padding-right": "14px"},
     "span": {
         "color": "white",
         "font-weight": "bold",
@@ -38,22 +38,7 @@ styles = {
         "box-shadow": "0px 4px 8px rgba(0,0,0,0.1)"
     }
 }
-options = {
-    "show_menu": False,
-}
-
-page = st_navbar(
-    pages,
-    urls=urls,
-    styles=styles,
-    options=options,
-    selected="Team"
-)
-
-if page == "Home":
-    st.switch_page("home.py")
-if page == "Player":
-    st.switch_page("pages/player.py")
+options = {"show_menu": False}
 
 
 
