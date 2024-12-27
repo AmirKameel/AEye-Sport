@@ -3,24 +3,24 @@ import streamlit as st
 from streamlit_navigation_bar import st_navbar
 
 # Set up page configuration
-st.set_page_config(page_title="A_Eye Football Performance Analysis", page_icon="⚽", layout="wide")
+st.set_page_config(page_title="Player Performance Analysis", page_icon="⚽", layout="wide")
 
-# Define pages and their respective URLs
+
+
+
+# Navigation bar setup remains the same
 pages = ["Home", "Player", "Team", "A_Eye"]
-urls = {"A_Eye": "https://aeye-sport.com"}
+urls = {"A_Eye": "aeye-sport.com"}
 
-# Styles for the navigation bar
 styles = {
     "nav": {
-        "background-color": "#2C3E50",  # Dark blue
+        "background-color": "#2C3E50",
         "justify-content": "center",
-        "padding": "5px",
+        "padding": "10px",
         "border-radius": "5px",
         "box-shadow": "0px 4px 8px rgba(0,0,0,0.2)"
     },
-    "img": {
-        "padding-right": "14px",
-    },
+    "img": {"padding-right": "14px"},
     "span": {
         "color": "white",
         "font-weight": "bold",
@@ -36,10 +36,7 @@ styles = {
         "box-shadow": "0px 4px 8px rgba(0,0,0,0.1)"
     }
 }
-options = {
-    "show_menu": False,
-    "show_sidebar": False,
-}
+options = {"show_menu": False}
 
 # Create the navigation bar
 page = st_navbar(
